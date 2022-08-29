@@ -1,0 +1,133 @@
+@use "variables";
+@use "functions";
+
+#home {
+    background-image: url(variables.$home_background_image_mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 750px;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: variables.$text_color;
+        height: 100%;
+
+        .container {
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+            text-transform: uppercase;
+            text-align: center;
+            height: 80%;    
+
+            p {
+                font-family: "Barlow Condensed";
+                font-size: functions.multiplication(1.5);
+                color: variables.$secondary_color;
+                margin: 0;
+            }
+
+            strong {
+                font-family: 'Bellefair', serif;
+                font-size: functions.multiplication(5);
+                font-weight: 400;
+            }
+
+            p:last-child {
+                width: 100%;
+                text-transform: none;
+                font-family: "Barlow";
+                font-size: functions.multiplication(0.938);
+            }
+
+            .btn-container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 100%;
+
+                button {
+                    text-transform: uppercase;
+                    font-size: functions.multiplication(1.25);
+                    font-family: 'Bellefair',serif;
+                    border-radius: 50%;
+                    border: none;
+                    width: 150px;
+                    height: 150px;
+                    cursor: pointer;
+                    transition: ease-in-out .6s;
+                    &:hover{
+                        box-shadow: 0 0 0 70px rgb(255,255,255,.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    #home {
+        background-image: url(variables.$home_background_image_tablet);
+
+        main {
+            .container {
+                max-width: 450px;
+
+                p {
+                    font-size: functions.multiplication(1.75);
+                }
+
+                strong {
+                    font-size: functions.multiplication(9.375);
+                }
+
+                p:last-child {
+                    font-size: functions.multiplication(1);
+                }
+
+                .btn-container {
+                    button {
+                        font-size: functions.multiplication(2);
+                        width: 242px;
+                        height: 242px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    #home {
+        background-image: url(variables.$home_background_image_desktop);
+
+        main {
+            .container {
+                max-width: 1200px;
+                flex-wrap: nowrap;
+                text-align: start;
+
+                p:last-child {
+                    width: 80%;
+                    font-size: functions.multiplication(1.125);
+                }
+
+                .btn-container {
+                    justify-content: flex-end;
+
+                    button {
+                        font-size: functions.multiplication(2);
+                        width: 274px;
+                        height: 274px;
+                    }
+                }
+            }
+        }
+    }
+}
