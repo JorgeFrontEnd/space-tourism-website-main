@@ -192,11 +192,7 @@
                 }
 
                 img {
-                    @media(max-height:850px) {
-                        width: 30%;
-                    }
-
-                    width: auto;
+                    width: 70%;
                 }
             }
         }
@@ -223,7 +219,7 @@
             }
 
             .container {
-                max-width: 1200px;
+                max-width: 1000px;
 
                 h1 {
                     font-size: functions.multiplication(1.75);
@@ -232,7 +228,7 @@
                 ul {
                     position: absolute;
                     left: 50%;
-                    top: 0;
+                    top: -50px;
 
                     label {
                         margin: 0;
