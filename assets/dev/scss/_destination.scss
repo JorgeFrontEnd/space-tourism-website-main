@@ -13,7 +13,7 @@
         display: flex;
         flex-direction: column;
         color: variables.$text_color;
-        padding-top: 80px;
+        padding: 10% 0;
         min-height: unset;
 
         hr {
@@ -137,8 +137,6 @@
         background-image: url(variables.$destination_background_image_tablet);
 
         main {
-            padding-top: 100px;
-
             .container {
                 ul {
                     font-size: functions.multiplication(1);
@@ -204,7 +202,6 @@
         background-image: url(variables.$destination_background_image_desktop);
 
         main {
-            padding-top: 15%;
             display: flex;
             flex-direction: column;
             align-items: center;

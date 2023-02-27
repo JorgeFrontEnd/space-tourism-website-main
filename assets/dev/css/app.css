@@ -98,6 +98,7 @@ nav #hamburguer_toggle:checked ~ .hamburguer {
     width: 55%;
     margin: 2rem 0;
     padding: 0 6rem;
+    position: absolute;
   }
   nav ul li {
     margin: 0 auto;
@@ -226,7 +227,7 @@ nav #hamburguer_toggle:checked ~ .hamburguer {
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
-  padding-top: 80px;
+  padding: 10% 0;
   min-height: unset;
 }
 #destination main hr {
@@ -347,9 +348,6 @@ nav #hamburguer_toggle:checked ~ .hamburguer {
   #destination {
     background-image: url("/assets/destination/background-destination-tablet.jpg");
   }
-  #destination main {
-    padding-top: 100px;
-  }
   #destination main .container ul {
     font-size: 1rem;
   }
@@ -417,7 +415,6 @@ nav #hamburguer_toggle:checked ~ .hamburguer {
     background-image: url("/assets/destination/background-destination-desktop.jpg");
   }
   #destination main {
-    padding-top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
